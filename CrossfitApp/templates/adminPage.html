@@ -1,0 +1,122 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="headerAdminContainer">
+    <h1>BIENVENIDO</h1>
+    <b>ADMINISTRADOR</b>
+    <div class="headerAdminText">
+        <p>En esta pagina encontraras todas las funcionalidades que un administrador
+            puede ejercer en el sitio web. Recuerda que todos los cambios se veran reflejados
+            automaticamente por los usuarios 
+        </p>
+    </div>
+</div>
+
+
+<div class="blogEditContainer">
+    <div class="blogEditText">
+        <h2>Administracion de blogs</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure, temporibus voluptas necessitatibus blanditiis voluptates dolore velit, vitae unde excepturi distinctio aut quo adipisci culpa quaerat. Minus vero dignissimos ipsam!</p>
+        <button class="createBtnAdmin"><a href="{% url 'createblog' %}">crear</a></button>
+    </div>
+
+    <div class="blogEditItems">
+        <!-- <div class="blogItemAdmin">
+            <span>ID #1 </span>
+            <b>Nombre del blog</b>
+                <button class="btnEditar">editar</button>
+                <button class="btnEliminar">eliminar</button>
+        </div> -->
+
+        {% for blog in blog_list %}
+        <div class="blogItemAdmin">
+            <span>ID #{{blog.id}}</span>
+            <b>{{blog.title}}</b>
+            <button class="btnEditarBlog"><a href="blog/{{blog.id}}">editar</a></button>
+            <button class="btnEliminarBlog"><a href="blog/delete/{{blog.id}}">eliminar</a></button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="reviewEditContainer">
+    <div class="blogEditText">
+        <h2>Administracion de Review</h2>
+       
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure, 
+            temporibus voluptas necessitatibus blanditiis voluptates dolore velit, 
+            vitae unde excepturi distinctio aut quo adipisci culpa quaerat. Minus 
+            vero dignissimos ipsam!</p>
+    </div>
+
+    <div class="blogEditItems">
+        <!-- <div class="ReviewEditItem">
+            <span>ID #1 </span>
+            <b>Jorge Mora</b>
+            <p>Lorem ipsum dolor sit...</p>
+                <button class="btnEliminar">eliminar</button>
+        </div> -->
+
+        {% for review in review_list %}
+        <div class="blogItemAdmin">
+            <span>ID #1 </span>
+            <b>{{review.name}}</b>
+            <p>{{ review.text|slice:":20" }}</p>
+            <button class="btnEliminarBlog"><a href="{% url 'deleteReview' review.id %}">eliminar</a></button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="reviewEditContainer">
+    <div class="blogEditText">
+        <h2>Administracion de Competencias</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure, temporibus voluptas necessitatibus blanditiis voluptates dolore velit, vitae unde excepturi distinctio aut quo adipisci culpa quaerat. Minus vero dignissimos ipsam!</p>
+        <button class="createBtnAdmin"><a href="{% url 'createcompetition' %}">crear</a></button>
+    </div>
+
+    <div class="blogEditItems">
+        <!-- <div class="CompetenciaEditAdmin">
+            <span>ID #1 </span>
+            <b>Nombre de la comtencia</b>
+                <button class="btnEditar">editar</button>
+                <button class="btnEliminar">eliminar</button>
+        </div> -->
+        {% for competition in competition_list %}   
+        <div class="blogItemAdmin">
+            <span>ID #{{competition.id}} </span>
+            <b>{{competition.name}}</b>
+            <button class="btnEditarBlog"><a href="competition/{{competition.id}}">editar</a></button>
+            <button class="btnEliminarBlog"><a href="competition/delete/{{competition.id}}">eliminar</a></button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="reviewEditContainer">
+    <div class="blogEditText">
+        <h2>Administracion de Competidores</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure, temporibus voluptas necessitatibus blanditiis voluptates dolore velit, vitae unde excepturi distinctio aut quo adipisci culpa quaerat. Minus vero dignissimos ipsam!</p>
+    </div>
+
+    <div class="blogEditItems">
+        <!-- <div class="blogItemAdmin">
+            <span>ID #1 </span>
+            <b>Nombre del blog</b>
+                <button class="btnEditarBlog">editar</button>
+                <button class="btnEliminarBlog">eliminar</button>
+        </div>-->
+
+        {% for competitor in competitors_list %}
+        <div class="blogItemAdmin">
+            <span>ID #{{competitor.id}} </span>
+            <b>Nombre: {{competitor.name}}</b>
+            <b>Edad: {{competitor.age}}</b>
+            <b>Competicion: {{competitor.competition_in}}</b>
+            <button class="btnEliminarBlog"><a href="{% url 'deleteCompetitor' competitor.id %}">eliminar</a></button>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

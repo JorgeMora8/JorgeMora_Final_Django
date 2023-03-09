@@ -1,0 +1,15 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="deleteBlogContainer">
+    <div class="deleteBlogText">
+        <h1>Estas seguro de eliminar la competicion:</h1>
+        <b>{{competition.name}}</b>
+    </div>
+    <form method="POST">
+        {% csrf_token %}            
+            <input type="submit" value="Seguro" class="btnDeleteBlog">
+        </form>
+        <button class="btnGoBack"><i class="fa-solid fa-door-open"></i><a href="{% url 'adminpage' %}">volver</a></button>
+</div>
+{% endblock content %}

@@ -1,0 +1,100 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<section>
+    <div class="homepageHeader">
+        <div class="headerTextContainer">
+            <h1>COMPETITIONS UPCOMING ...</h1>
+            <p>Chequea tu zona horaria y preparate para la siguiente competicion</p>
+            <!-- <button class="btnAboutCrossfitGym">ABOUT CROSSFIT GYM</button> 
+            <button class="btnAboutCrossfitGym"><a href="https://youtu.be/s3gcoturqqE">UNION DE CAMPEONES</a></button> -->
+        </div>
+        <div></div>
+    </div>
+  </section>
+  <h2 class="compiteProcessTitle">PROCESO PARA COMPETIR</h2>
+  <section class="compiteInfoSect">
+    <div class="stepsCompiteContainer">
+        <div class="contaierItemSteps">
+          <div class="itemStepImages"></div>
+          <b>Inscribete</b>
+          <p>Chequea en la web oficial de proximas competiciones</p>
+        </div>
+
+        <div class="contaierItemSteps">
+          <div class="itemStepImagesTwo"></div>
+          <b>Compite</b>
+          <p>Desafiate a ti mismo y ponte a prueba en nuestras competencias de alto rendimiento</p>
+        </div>
+
+        <div class="contaierItemSteps">
+          <div class="itemStepImagesThree"></div>
+          <b>Gana ranking</b>
+          <p>Al competir y obtener buenas metricas, subiras de nivel en el ranking mundial de Crossfit</p>
+        </div>
+    </div>    
+  </section>
+
+  <div class="imgCompetition">
+    <b>COMPITE FOR YOUR LIFE</b>
+  </div>
+
+  <section class="competittionItemContainer">
+
+    {% for competition in competitions %}
+    <div class="competitionItem">
+      <div class="countryLogoArea">
+        <b class="crossfitlogo">Crossfit Games</b>
+      </div>
+      <div class="competitionInfo">
+        <span>{{competition.category}}</span>
+        <b>{{competition.name}}</b>
+        <p><i class="fa-solid fa-users" ></i>Especificaciones del evento.<i class="fa-solid fa-location-dot"  style="margin:0px 10px"></i>{{competition.state}}<i class="fa-solid fa-calendar-days"  style="margin:0px 10px"></i>{{competition.country}}</p>
+
+      </div>
+      <div class="detalleBtn"><a href="{% url 'competitionDetail' competition.id %}" class="detalleBtnLink">Ver detalle</a></div>
+    </div>
+    {% endfor %}
+
+    <!-- <div class="competitionItem">
+      <div class="countryLogoArea">
+        <b class="crossfitlogo">Crossfit Games</b>
+      </div>
+      <div class="competitionInfo">
+        <span>TIPO ENVENTO</span>
+        <b>NOMBRE DEL EVENTO</b>
+        <p><i class="fa-solid fa-users"></i>Especificaciones del evento.    <i class="fa-solid fa-location-dot"></i>Location del evento    <i class="fa-solid fa-calendar-days"></i>Date del evento</p>
+
+      </div>
+      <div class="detalleBtn">
+        <button><a href="">VER DETALLES</a></button>
+      </div>
+    </div>
+
+    <div class="competitionItem">
+      <div class="countryLogoArea">
+        <b class="crossfitlogo">Crossfit Games</b>
+      </div>
+      <div class="competitionInfo">
+        <span>Tipo de envento</span>
+        <b>NOMBRE DEL EVENTO</b>
+        <p><i class="fa-solid fa-users"></i>Especificaciones del evento.    <i class="fa-solid fa-location-dot"></i>Location del evento    <i class="fa-solid fa-calendar-days"></i>Date del evento</p>
+
+      </div>
+      <div class="detalleBtn"></div>
+    </div>
+
+    <div class="competitionItem">
+      <div class="countryLogoArea">
+        <b class="crossfitlogo">Crossfit Games</b>
+      </div>
+      <div class="competitionInfo">
+        <span>Tipo de envento</span>
+        <b>NOMBRE DEL EVENTO</b>
+        <p><i class="fa-solid fa-users"></i>Especificaciones del evento.    <i class="fa-solid fa-location-dot"></i>Location del evento    <i class="fa-solid fa-calendar-days"></i>Date del evento</p>
+
+      </div>
+      <div class="detalleBtn"></div>
+    </div> -->
+  </section>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="headerInfoContainer">
+    <h1>Creacion de <span>blogs</span></h1>
+</div>
+<div class="formContainer">
+    <form action="" method="POST" class="formArea">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="create" class="btnEditarUsuario" style="margin:20px 0px; border: none;">
+    </form>
+</div>
+{% endblock content %}

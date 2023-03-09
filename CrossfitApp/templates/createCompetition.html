@@ -1,0 +1,15 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="headerCompetition">
+    <h1>Crea Una <span>Competicion</span></h1>
+    <button class="btnGoBack"><i class="fa-solid fa-door-open"></i> <a href="{% url 'adminpage' %}">volver</a></button>
+</div>
+<div class="formContainer">
+    <form action="" method="POST" class="formArea">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btnCrearCompetition">crear</button>
+    </form>
+</div>
+{% endblock content %}

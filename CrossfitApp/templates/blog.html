@@ -1,0 +1,41 @@
+{% extends 'pageTemplate/page.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <div class="blogContainer">
+        <h1>CONQUISTA TU CUERPO, CONQUISTA TU VIDA...</h1>
+        <div class="blogTextAreaContainer">
+            <b>Encuentra contenido relacionado a este deporte que cambia vidas, un estilo de vida saludable, gimnasios y mas... </b>
+            <div class="buscadorContainer">
+                <ul>
+                    {% for blog_type in blog_types%}
+                    <li><a href="{% url 'blog'%}?q={{blog_type}}">{{blog_type}}</a></li>   
+                    {% endfor %}
+                    <li><a href="{% url 'blog' %}">Todos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="blogFraseContainer">
+        <b>TAKE YOUR TRAINING TO THE <span>NEXT LEVEL</span></b>
+    </div>
+
+    <div class="blogPostContainer">  
+        {% for blog in blog_list %}
+        <div class="PostItemContainer">
+            <span class="tipoPost" style="background-color: rgb(150, 150, 65);">{{blog.category}}</span>
+            <b class="tituloPost">{{blog.title}}</b>
+            <p class="textoPost">{{ blog.text|slice:":100" }}... </p>
+            <div class="btnAreaContainer">
+                <button class="btnBlogDetail" style="background-color: #edfd53; border: none; padding: 5px 10px;">
+                    <a href="{% url 'blogDetail' blog.id %}" style="color: #101010; text-decoration: none; font-weight: 500;" >Leer mas</a></button>
+            </div>   
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+
+</section>
+{% endblock content %}

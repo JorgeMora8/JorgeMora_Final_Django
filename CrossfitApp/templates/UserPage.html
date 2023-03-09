@@ -1,0 +1,18 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="headerCompetition">
+    <h1>Informacion de <span>usuario</span></h1>
+    <button class="btnGoBack"><i class="fa-solid fa-door-open"></i> <a href="{% url 'homepage' %}">volver</a></button>
+</div>
+
+<div class="infoUsuarioItem">
+        <b>Username = <span>{{user.username}}</span></b>
+        <b>Nombre = <span>{{user.first_name}}</span></b>
+        <b>Apellido = <span>{{user.last_name}}</span></b>
+        <b>Correo = <span>{{user.email}}</span></b>
+
+    <button class="btnEditarUsuario" style="margin:20px 0px"><a href="{% url 'edituser' %}" style="text-decoration: none; color: #121212;">Editar</a> </button>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,1779 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link-m { 
+   font-family: "teko", sans-serif;
+   font-weight: 400;
+   text-decoration: none;
+   font-size: 1.4rem;
+   margin: 5px 10px;
+   color: #fff;
+}
+
+.navbar-m { 
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.nav-link-m:hover { 
+    color: rgb(203, 56, 56);
+}
+
+.navbar-user { 
+    font-family: "teko", sans-serif;
+    font-weight: 400;
+    margin: 5px 20px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.navbar-username{ 
+    font-family: "teko", sans-serif;
+    font-weight: 400;
+    margin: 5px 20px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.container-user{ 
+    background-color: #000;
+}
+
+.homepageHeader{ 
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("homepage.png");
+    background-color: rgba(0, 0, 0, 0.549);
+}
+
+.headerTextContainer{ 
+    width: 35rem;
+    height: auto;   
+}
+
+.headerTextContainer h1 { 
+    font-family: "teko", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.headerTextContainer P { 
+    color: #fff;
+    font-family:"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+
+.btnAboutCrossfitGym{ 
+    background-color: rgb(203, 56, 56);
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 5px 10px;
+}
+
+.btnAboutCrossfitGym:hover { 
+    background-color: rgb(178, 26, 26);
+}
+
+.compiteProcessTitle{ 
+    font-family: "teko", sans-serif;
+    /* color: #fff; */
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 2rem 0px;
+}
+
+.compiteInfoSect{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepsCompiteContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #ccccccee; */
+}
+
+.footerContainer div { 
+    width: 20rem;
+    height: auto;
+
+    margin: 10px;
+}
+
+.navegationFooter b { 
+    color: #727272;
+    font-weight: 500;
+    font-family: "teko", sans-serif;
+    font-size: 1.8rem;
+}
+
+.navegationFooter ul { 
+    list-style: none;
+    padding: 0 3px;
+}
+
+.navegationFooter ul li { 
+    margin: 0;
+}
+
+.navegationFooter ul li a { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.fa-brands{ 
+    color: #a46262;
+    margin: 5px;
+}
+
+.blogContainer {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #000;
+    padding: 4rem 0px;
+}
+
+.blogContainer h1 { 
+    font-family: "teko", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #727272;
+    transition: 0.2s ease;
+}
+
+.blogContainer h1:hover { 
+    color: #727272;
+    color: #ffffff;
+}
+
+.blogContainer b { 
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.blogTextAreaContainer{ 
+    width: 47rem;
+    height: auto;
+}
+
+.reviewBlogContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0px;
+}
+
+.reviewBlogContainer div {
+    width: 22rem;
+    height: auto;
+    margin: 10px;
+    border-bottom: 1px solid rgb(79, 250, 170);
+}
+
+.buscadorContainer { 
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buscadorContainer ul { 
+    list-style: none;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.buscadorContainer ul li a { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 5px 10px;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.buscadorContainer ul li a:hover { 
+    color: #edfd53;
+}
+
+.blogFraseContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blogFraseContainer b { 
+    font-family: 'teko', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #1e1e1e;
+    padding: 4.5rem 0px;
+    transition: 0.2s ease;
+}
+
+.blogFraseContainer span { 
+    color: #e0f336;
+}
+
+.blogPostContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #121212;
+    padding: 4rem;
+    margin: 2rem 0px;
+}
+
+.PostItemContainer { 
+    width: 22rem;
+    height: 22rem;
+    border: 1px solid white;
+    margin: 15px;
+
+}
+
+.tipoPost{ 
+    background-color: #645CBB;
+    color: #fff;
+    font-family: "teko", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tituloPost { 
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin:20px 10px;
+}
+
+.textoPost { 
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin:10px;
+}
+
+.btnAreaContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.btnAreaContainer button {
+    background-color: #fff;
+    color: black;
+    margin: 10px ;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.blogDetailContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0px;
+}
+
+.blogContent{ 
+    width: 60rem;
+    height: auto;
+}
+
+.blogImgaeContainer{
+    width: 100%;
+    height: 30rem;
+    background-color: #1e1e11;
+    background-image: url("gym.png");
+}
+
+.blogContent b {
+    color: #101010;
+    display: block;
+}
+
+
+.reviewsContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 4rem 0px;
+}
+
+.reviewItem{ 
+    border-right: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+    width: 23rem;
+    height: 10rem;
+    padding: 10px;
+    margin: 15px;
+}
+
+.reviewItemName{ 
+    color: #000;
+    background-color: #edfd53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 5px;
+    padding: 2px 5px;
+}
+
+.reviewItemText { 
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.btnAgregarReview{ 
+    background-color:rgb(217, 61, 61);
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    font-family: "teko", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+
+.btnAgregarReview:hover { 
+    background-color:rgb(185, 32, 32);
+    color: rgb(255, 255, 255);
+}
+
+.competittionItemContainer { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    flex-direction: column;
+}
+
+.competitionItem{ 
+    width: 70%;
+    height: auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0fd53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+}
+
+.countryLogoArea{ 
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1e1e1e;
+}
+
+.competitionInfo{ 
+    width: 40rem;
+    height: 10rem;
+    margin: 0px 25px;
+}
+
+.competitionInfo span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    color: #98a51d;
+}
+
+.competitionInfo b { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.detalleBtn { 
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossfitlogo{ 
+    font-family: "Anton", sans-serif;
+    color: #fff;
+
+}
+
+.LogoContainer b { 
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    color: #202020;
+}
+
+.itemStepImages{ 
+    width: 100%;
+    height: 13rem;
+    background-image: url("inscription.png");
+}
+
+.itemStepImagesTwo{ 
+    width: 100%;
+    height: 13rem;
+    background-image: url("competitionItem.png");
+}
+
+.itemStepImagesThree{ 
+    width: 100%;
+    height: 13rem;
+    background-image: url("ranking.png");
+}
+.contaierItemSteps b { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(42, 42, 42);
+    margin: 5px 10px;
+    border-bottom: 1.6px solid #02ffd9;
+}
+
+.contaierItemSteps p { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 5px 10px;
+}
+
+.contaierItemSteps{ 
+    width: 20rem;
+    height: 30rem;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.atletesContainer{ 
+    width: 100%;
+    height: 20rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.atheleteItem { 
+    width: 15rem;
+    height: 15rem;
+    background-color: #f1f1f1;
+    border-bottom: 1.6px solid #1e1e1e;
+    margin: 20px;
+}
+
+.atheleImage {
+    width: 100%;
+    height: 8rem;
+    background-color: #e0fd53;
+    margin-bottom: 10px;
+}
+.atheleteItem span { 
+    background-color: #e0fd53;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    padding: 5px ;
+    margin-top: 5px;
+}
+
+.athleteName { 
+    display: block;
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.CrossfitInfo{ 
+    width: 100%;
+}
+
+.linkArea { 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.atheleteItem a { 
+    text-decoration: none;
+    background-color: #1e1e1e;
+    padding: 2px;
+    color: #fff;
+    text-align: left;
+}
+
+.detalleBtn button { 
+    background-color: #e0fd53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    padding: 5px 10px;
+}
+
+.detalleBtn button a { 
+    text-decoration: none;
+    color: #000;
+}
+
+.CrossfitInfo{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0px;
+}
+
+
+.CrossfitInfoImg { 
+    width: 37rem; 
+    height: 25rem;
+    background-color: #121212;
+    margin: 0px 10px;
+    background-image: url("crossfitInfo.png");
+}
+
+.CrossfitInfoText { 
+    width: 37rem; 
+    height: auto;
+    margin: 0px 10px;
+    border-bottom: 1.7px solid #e0fd53;
+}
+
+.infoCrossfitItemConatiner{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.infoCrossfitItem{ 
+    width: 16rem;
+    height: 16rem;
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: #1e1e1e;
+}
+
+.CrossfitInfoText h2 { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.infoCrossfitItem b { 
+    color: #fff;
+    font-family: "teko", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.infoCrossfitItem p { 
+    color: #fff;
+    margin: 0px 10px;
+}
+
+.CrossfitInfoText p { 
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.imgCompetition {
+    width: 100%;
+    height: 25rem;
+    background-image: url(competitioBack.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.imgCompetition b { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #000000;
+    transition: 0.2s ease;
+}
+
+.imgCompetition b:hover { 
+    color: #fff;
+}
+
+
+.atheleteDetailContainer{ 
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("gym.png");
+}
+
+.infoAtheleContainer{ 
+    width: 50rem;
+    height: 30rem;
+    background-color: rgba(0, 0, 0, 0.882);
+}
+.reviewItemInfoContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(233, 233, 233);
+    flex-direction: column;
+    padding: 4rem 0px;
+}
+
+.reviewItemInfo {
+    width: 70rem;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    margin: 2rem 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid #d5fd53;
+}
+
+.reviewItemInfoImg, 
+.reviewItemInfoImgTwo, 
+.reviewItemInfoImgThree{ 
+    width: 30rem;
+    height: 25rem;
+    background-color: violet;
+}
+
+.reviewItemInfotext{ 
+    width: 40rem;
+    height: auto;
+}
+
+.reviewItemInfotext h2 { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    margin: 0px 20px;
+}
+
+.reviewItemInfotext p { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 0px 20px;
+}
+
+.reviewItemInfotext span { 
+    margin: 0px 20px;
+    background-color: #d5fd53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding: 5px 10px;
+}
+
+.reviewItemInfoImg{ 
+    background-image: url("reviewGroup.png");
+}
+
+.reviewItemInfoImgTwo { 
+    background-image: url("reviewRunning.png");
+}
+
+.reviewItemInfoImgThree { 
+    background-image: url("reviewTeam.png");
+}
+
+.reviewItemText span { 
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.formContainerLogin { 
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: url("reviewFormTwo.png");
+}
+
+.formArea{ 
+    width: 30rem;
+    height: 30rem;
+}
+
+.formContainer{
+    width: 100%;
+    height: 40rem;
+    background-image: url("loginBack.png");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.formAreaLogin{ 
+    width: 30rem;
+    height: 30rem;
+    background-color: #fff;
+}
+
+.competitionInfoContainer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    padding: 4rem 0px;
+}
+
+.competitionInfoText{ 
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.competitionInfoText h1 { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #edfd53;
+}
+
+.competitionInfoText span { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #edfd53;
+    padding: 5px 10px;
+}
+
+.competitionInfoText ul { 
+    display: flex;
+    justify-content: left;
+    list-style: none; 
+    padding: 0; 
+    flex-direction: column;
+}
+
+
+.competitionInfoText ul li {
+    color: #474e00;
+}
+
+.competitionInfoText b { 
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: "teko", sans-serif;
+    color: #fff;
+}
+
+.imgCompetitionDetail { 
+    width: 100%;
+    height: 20rem;
+}
+
+.inscriptionContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 4rem 0px;
+}
+
+.peopleInCompetition {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+}
+
+
+
+.inscriptionContainer b { 
+    padding: 1rem;
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.inscriptionContainer span { 
+    background-color: #edfd53;
+    color: #000;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.peopleInItem span {
+    background-color: #edfd53;
+    color: #000;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.peopleInItem b {
+    font-size: 2rem;
+    display: block;
+    font-family: "teko", sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 5px 10px;
+}
+
+.peopleInItem p { 
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0px 10px;
+}
+
+.detalleBtnLink{ 
+    background-color: #edfd53;
+    color: #1e1e1e;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.detalleBtnLink:hover{ 
+    background-color: #77802c;
+    color: #ffffff;
+}
+
+.FormReviewBlog input {
+    width: 20rem;
+    padding: 5px 10px;
+}
+
+.FormReviewBlog p label{ 
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.FormReviewBlog p select { 
+    width: 20rem;
+}
+
+.reviewFormArea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #171717;
+    padding: 4rem 0px;
+}
+
+.reviewFormInfo{ 
+    width: 20rem;
+    height: auto
+}
+
+.reviewFormInfo b { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #edfd53;
+}
+
+.reviewBlogArea{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reviewBlogArea div {
+    width: 17rem;
+    height: auto;
+    background-color: #171717;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.reviewAuthor { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #000000;
+    background-color: #edfd53;
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+.reviewText { 
+    color: #ffffff;
+    display: block;
+    margin: 10px 20px;
+}
+
+.reviewFormInfo p { 
+    color: #fff;
+}
+
+.formCompetitorsEnroll p input{ 
+    width: 20rem;
+}
+
+.formCompetitorsEnroll select{ 
+    width: 20rem;
+}
+
+.formCompetitorsEnroll input { 
+    width: 20rem;
+}
+
+.mensajeLogoutArea{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1e1e1e;
+}
+
+.logoutMessageArea{
+    width: 100%;
+    height: 40rem;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logoutMessageArea h1 { 
+    color: #fff; 
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.logoutMessageArea p { 
+    color: #edfd53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    
+}
+
+.navbarContainer{ 
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkContainer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbarContainer b { 
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 2rem;
+    margin: 10px 0px 0px 0px;
+}
+
+.linkContainer li a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem; 
+    color: #1e1e1e;
+    margin: 0px 20px;
+}
+
+.loginMessageArea{ 
+    width: 100%;
+    height: 30rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.loginMessageTextContainer h1 { 
+    color: #fff;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.loginMessageTextContainer p { 
+    color: #edfd53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.formLoginContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0px;
+    background-color: #000000;
+}
+
+.formLogin{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.formLogin p label { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+.formLogin p input { 
+    width: 16rem;
+    padding: 5px 10px;
+    margin: 10px ;
+}
+
+.loginFormBtn  { 
+    width: 16rem;
+    margin: 20px;
+    background-color: #edfd53;
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.loginFormBtn:hover { 
+    background-color: #8b9818;
+    color: #ffffff;
+}
+
+.mensajeRegisterContainer { 
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121212;
+}
+
+.mensajeRegisterContainer h1 { 
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.mensajeRegisterContainer p { 
+    color: #edfd53;;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.formRegisterContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem 0px;
+}
+
+.formRegister{ 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: auto;
+}
+
+.formRegister p input { 
+    width: 20rem;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.btnRegister { 
+    width: 16rem;
+    margin: 20px;
+    background-color: #edfd53;
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btnRegister:hover { 
+    background-color: #8b9818;
+    color: #ffffff;
+}
+
+
+.headerAdminContainer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 40rem;
+    background-color: #121212;
+}
+
+.headerAdminContainer h1 { 
+    color: #fff;
+}
+
+.headerAdminContainer b { 
+    color: #edfd53;
+}
+
+.headerAdminText{ 
+    width: 30rem;
+    height: auto;
+    margin: 20px 0px;
+}
+
+.headerAdminText p { 
+    color: #fff;
+}
+
+
+.blogEditContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-bottom: 1.5px solid #edfd53;
+}
+
+.blogEditText { 
+    width: 30rem;
+    height: auto;
+    padding: 4rem 0px;
+}
+
+.blogEditItems { 
+    width: 40rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blogItemAdmin {
+    width: 15rem;
+    height: auto;
+    background-color: #EDFD53;
+    margin: 10px;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.blogItemAdmin span { 
+    display: block;
+    margin: 0px 10px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.blogItemAdmin b { 
+    display: block;
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #000000; 
+    margin: 0px 10px;
+}
+
+.blogEditText h2 { 
+    display: block;
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: rgb(28, 28, 28);
+    border-bottom: 2px solid #edfd53;
+}
+
+.blogEditText p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #202020;
+}
+
+.btnEditarBlog {
+    background-color: #000;
+    border: none;
+    padding: 5px;
+    margin: 5px 11px;
+}
+
+.btnEditarBlog a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnEliminarBlog{ 
+    background-color: #ffffff;
+    border: none;
+    padding: 5px;
+    margin: 5px 11px;
+}
+
+.btnEliminarBlog a { 
+    color: #000000;
+    text-decoration: none;
+}
+
+.reviewEditContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1.5px solid #edfd53;
+}
+
+.ReviewEditItem{ 
+    width: 18rem;
+    height: auto;
+    background-color: #171717;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.ReviewEditItem b {
+    color: #fff;
+    display: block;
+}
+
+.ReviewEditItem p { 
+    color: #fff;
+}
+
+.CompetenciaEditAdmin{ 
+    width: 18rem;
+    height: auto;
+    background-color: #171717;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.CompetenciaEditAdmin b { 
+    color: #fff;
+}
+
+.CompetenciaEditAdmin span {
+    display: block;
+}
+
+.btnEditar, 
+.btnEditar{
+    background-color: #edfd53;
+    color: #000;
+}
+
+.deleteBlogContainer { 
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #151515;
+    flex-direction: column;
+}
+
+.deleteBlogText { 
+    width: 30rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.deleteBlogText h1 { 
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Teko", sans-serif;
+}
+
+.deleteBlogText b { 
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    color: #edfd53;
+    font-size: 2rem;
+}
+
+.btnDeleteBlog{ 
+    background-color: #edfd53;
+    color: #000;
+    width: 10rem;
+    padding: 5px 10px;
+    transition: 0.2s ease;
+}
+
+.btnDeleteBlog:hover { 
+    background-color: #7a8615;
+    color: #ffffff;
+}
+
+.btnGoBack { 
+    background-color: #ffffff;
+    color: #303030;
+    width: 10rem;
+    padding: 5px 10px;
+    transition: 0.2s ease;
+    margin-top:30px ;
+}
+
+.btnGoBack a { 
+    color: #303030;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.requermientosContainer{ 
+    width: 100%;
+    height: auto;
+    background-color: #edfd53;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.requermientosContainer b { 
+    color: #1e1e1e;
+}
+
+.headerInfoContainer{ 
+    width: 100%;
+    height: 20rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerInfoContainer h1 { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.headerInfoContainer h1 span { 
+    color: #edfd53;
+}
+
+.formContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formArea{ 
+    width: 40rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.formContainer{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 4rem 0px;
+}
+
+.formArea { 
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formArea p input, 
+.formArea p select { 
+    width: 20rem;
+}
+
+.btnCrearCompetition{ 
+    width: 10rem;
+    background-color: #edfd53;
+    color: #000;
+    border: none;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.btnCrearCompetition:hover {
+    background-color: #acbb29;
+    color: #fff;
+}
+
+.headerCompetition{ 
+    width: 100%;
+    height: 20rem;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.headerCompetition h1 { 
+    font-family: "teko", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.headerCompetition h1 span { 
+    color: #edfd53;
+}
+
+.createBtnAdmin { 
+    width: 10rem;
+    background-color: #edfd53;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.createBtnAdmin a{ 
+    color: #000;
+    text-decoration: none;
+}
+
+.peopleInItem {
+    width: 18rem;
+    height: auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 1rem;
+    margin: 20px;
+}
+
+.rounded-circle{ 
+    display: block;
+}
+
+
+.ubicacionCompetencia { 
+    color: #fff;
+}
+
+.formCompetidor { 
+    width: 30rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.formCompetidor p input, 
+.formCompetidor p select{ 
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.btnInscribirseCompetidor{ 
+    background-color: #edfd53;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.2s ease;
+}
+
+
+.btnInscribirseCompetidor:hover { 
+    background-color: #aeba3c;
+}
+
+.btnReviewBlog{ 
+    background-color: #e1ee7f;
+    color: #464c0b;
+}
+
+.btnSalirCompetencia {
+    background-color: #000000;
+    padding: 5px 10px;
+    border: none;
+    margin: 0px 10px;
+}
+
+.btnSalirCompetencia a { 
+    text-decoration: none;
+    color: #edfd53;
+    margin: 0px 10px;
+}
+
+.OutCompeticionHeader{ 
+    width: 100%;
+    height: 30rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #121212;
+}
+
+.OutCompeticionHeader h1 { 
+    color: #fff;
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.btnOutCompeticion { 
+    margin: 10px 0px;
+    background-color: #edfd53;
+    color: #000;
+    padding: 7px 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.btnOutCompeticion:hover { 
+    background-color: #717a20;
+    color: #ffffff;
+}
+
+.ejerciciosCompeticion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 2rem 0px;  
+}
+
+.ejerciciosItem { 
+    width: 15rem;
+    height: 10rem;
+    background-color: #ffffff;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+}
+
+.ejerciciosItem:hover { 
+    transform: translateY(-2px);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.108);
+}
+
+.headerAboutContainer{ 
+    width: 100%;
+    height: 25rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.infoUsuarioItem{ 
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #121212;
+}
+
+.infoUsuarioItem b { 
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.infoUsuarioItem b span { 
+    color: #edfd53;
+}
+
+.btnEditarUsuario{
+    width: 15rem;
+    background-color: #edfd53;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+
+.editUserFormHeader{ 
+    width: 100%;
+    height: 35rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

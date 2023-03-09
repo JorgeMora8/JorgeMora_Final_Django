@@ -1,0 +1,38 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+
+<div class="blogImgaeContainer"></div>
+<div class="blogDetailContainer">
+    <div class="blogContent">
+        <b>{{blog.subtitle}}</b>
+        <h1 style="color: #b8c63d;">{{blog.title}}</h1>
+        <span>{{blog.subtitle}}</span>
+        <p>{{blog.text}}</p>        
+    </div>
+</div>
+
+<div class="reviewBlogArea">
+{% for review in reviews %}
+<div>
+    <b class="reviewAuthor">{{review.name}}</b>
+    <b class="reviewText">"{{review.text}}"</b>
+</div>
+
+{% endfor %}
+</div>
+
+<div class="reviewFormArea">
+    <div class="reviewFormInfo">
+        <b>DEJA TU OPINION</b>
+        <p>Dinos que te parecio este post. Recuerda ingresar el nombre correcto del post</p>
+    </div>
+    <form action="" method="POST" class="FormReviewBlog">
+    {% csrf_token %}
+    {{form_review.as_p}}
+    <input type="submit" value="guardar" class="btnReviewBlog">
+    </form>
+</div>
+
+
+{% endblock content %}

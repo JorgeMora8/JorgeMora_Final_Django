@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbarContainer">
+        <ul class="linkContainer">
+            <li><a href="{% url 'login' %}">login</a></li>
+            <li><a href="{% url 'register' %}">register</a></li>
+        </ul>
+        <b>Crossfit</b>
+    </div>
+    <div class="logoutMessageArea">
+        <div>
+            <h1>TE HAS DESLOGUEADO</h1>
+            <p>Nos vemos luego...</p>
+        </div>
+    </div>
+</body>
+</html>

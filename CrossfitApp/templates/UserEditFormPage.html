@@ -1,0 +1,19 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+
+<div class="headerCompetition">
+    <h1>Editar <span style="color:#edfd53">usuario</span></h1>
+    <p style="color:#fff">Agrega los nuevos datos para actualizar tu perfil</p>
+    <button class="btnGoBack"><i class="fa-solid fa-door-open"></i> <a href="{% url 'about' %}">volver</a></button>
+</div>
+
+<div class="formContainer">
+    <form action="" method="POST" class="formArea">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Update" class="btnInscribirseCompetidor" style="padding: 5px 10px">
+    </form>
+</div>
+
+{% endblock content %}

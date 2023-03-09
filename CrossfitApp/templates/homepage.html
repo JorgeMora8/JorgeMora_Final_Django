@@ -1,0 +1,109 @@
+{% extends 'pageTemplate/page.html' %}
+{% load static %}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<script src="https://kit.fontawesome.com/4834373349.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-user">
+        <div class="row">
+          <div class="col">
+            <p class="navbar-user">Usuario Registrado</p>
+          </div>
+          <div class="col">
+            <p class="navbar-username"><i class="fa-solid fa-user" style="color: #b7ff00
+            "></i> Jorge Mora</p>
+          </div>
+        </div>
+      </div>
+    <nav class="navbar navbar-m navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link-m active" aria-current="page" href="#">HOME</a>
+              <a class="nav-link-m" href="#">GAMES</a>
+              <a class="nav-link-m" href="#">Pricing</a>
+              <a class="nav-link-m disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="homepageHeader">
+            <div class="headerTextContainer">
+                <h1>UNA REVOLUCION EN EL FITNESS</h1>
+                <p>CrossFit was founded in 2001 and can be used to accomplish any goal, from improved health to better performance. CrossFit is so effective it may feel like magic, but in truth, its a formula — a formula that works..</p>
+                <button class="btnAboutCrossfitGym">ABOUT CROSSFIT GYM</button> 
+                <button class="btnAboutCrossfitGym"><a href="https://youtu.be/s3gcoturqqE">UNION DE CAMPEONES</a></button>
+            </div>
+            <div></div>
+        </div>
+      </section>
+</body>
+</html> -->
+
+
+{% block content %}
+<section>
+    <div class="homepageHeader">
+        <div class="headerTextContainer">
+            <h1>UNA REVOLUCION EN EL FITNESS</h1>
+            <p>Crossfit fue fundado en 2001 y puede emplearese para lograr cualquier objetivo, 
+              desde mejorar la salud hasta nuestro rendimiento fisico. Crossfit es tan efectivo
+               que se siente como magia, pero en realidad, es una formula, una que funciona</p>
+            <button class="btnAboutCrossfitGym"><a href="https://youtu.be/qFhCSYTSd50" target="_blank" style="text-decoration: none; color: #fff;">UNION DE CAMPEONES</a></button>
+        </div>
+        <div>
+        </div>
+    </div>
+  </section>
+
+  <section class="CrossfitInfo">
+
+    <div class="CrossfitInfoText">
+      <h2>QUE ES CROSSFIT</h2>
+      <p>CrossFit es una técnica de entrenamiento que conecta movimientos de diferentes disciplinas, tales como la halterofilia, el entrenamiento metabólico o el gimnástico .</p>
+    </div>
+    <div class="CrossfitInfoImg"></div>
+  </section>
+
+  <div class="infoCrossfitItemConatiner">
+    <div class="infoCrossfitItem">
+      <i class="fa-solid fa-dumbbell fa-2x" style="color:#000000; padding: 10px; background-color: #e0fd53;"></i>
+      <b>Entrenamiento</b>
+      <p>diferentes disciplinas, tales como la halterofilia, el entrenamiento metabólico o el gimnástico </p>
+    </div>
+
+    <div class="infoCrossfitItem">
+      <i class="fa-solid fa-people-group fa-2x" style="color:#000000; padding: 10px; background-color: #e0fd53;"></i>
+      <b>Grupos</b>
+      <p>Unete y se parte de una comunidad de atletas al rededor del mundo</p>
+    </div>
+
+    <div class="infoCrossfitItem">
+      <i class="fa-sharp fa-solid fa-trophy fa-2x"  style="color:#000000; padding: 10px; background-color: #e0fd53;"></i>
+      <b>Competiciones</b>
+      <p>Compite y desafiate a ti mismo en nuestas competiciones </p>
+    </div>
+
+  </div>
+{% endblock content %}

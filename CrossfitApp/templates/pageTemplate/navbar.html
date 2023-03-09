@@ -1,0 +1,29 @@
+<div class="container-user">
+        <div class="row">
+          <div class="col">
+            <p class="navbar-user">Usuario Registrado</p>
+          </div>
+          <div class="col">
+            <p class="navbar-username"><a href="{% url 'about' %}"><i class="fa-solid fa-user" style="color: #b7ff00; margin: 0px 10px;"></i></a>{{request.user}}</p>
+          </div>
+        </div>
+      </div>
+    <nav class="navbar navbar-m navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link-m active" aria-current="page" href="{% url 'homepage' %}">HOME</a>
+              <a class="nav-link-m" href="{% url 'competition' %}">GAMES</a>
+              <a class="nav-link-m" href="{% url 'blog' %}">BLOG</a>
+              {% if request.user.is_staff %}
+              <a class="nav-link-m" href="{% url 'adminpage' %}">ADMIN-PAGE</a>
+              {% endif %}
+            </div>
+          </div>
+          <a class="nav-link-m" href="{% url 'logout' %}">LOGOUT</a>
+        </div>
+      </nav>

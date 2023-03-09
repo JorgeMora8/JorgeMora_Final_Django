@@ -1,0 +1,16 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="deleteBlogContainer">
+    <div class="deleteBlogText">
+        <h1>Estas seguro de eliminar esta review:</h1>
+        <b>Autor: {{review.name}}</b>
+        <b>Mensaje: {{review.text}}</b>
+    </div>
+    <form method="POST">
+        {% csrf_token %}            
+            <input type="submit" value="Seguro" class="btnDeleteBlog">
+        </form>
+        <button class="btnGoBack"><i class="fa-solid fa-door-open"></i><a href="{% url 'adminpage' %}">volver</a></button>
+</div>
+{% endblock content %}

@@ -1,0 +1,90 @@
+{% extends 'pageTemplate/page.html' %}
+
+{% block content %}
+<div class="competitionInfoContainer">
+    <div class="competitionInfoText">
+        <!-- <span>{{competition.name}}</span> -->
+        <b>Categoria: {{competition_detail.category}}</b>
+        <h1>{{competition_detail.name}}</h1>
+        <ul>
+            <li style="font-size: 1.3rem; color: #fff;"><i class="fa-sharp fa-solid fa-location-dot" style="margin: 0px 10px"></i>Estado: {{competition_detail.state}}</li>
+            <li style="font-size: 1.3rem; color: #fff;"><i class="fa-solid fa-earth-americas" style="margin: 0px 8px"></i>Pais: {{competition_detail.country}}</li>
+        </ul>
+        <div class="requermientosContainer">
+            <b>Requerimientos de la competicion</b>
+            <p>Es necesario que cumplas con los siguientes requerimientos para estar al nivel de las competiciones</p>
+            <ul>
+                <li>Resistencia en Running</li>
+                <li>Alto rendimiento en ejercicios areodinamicos</li>
+                <li>Adaptado al levantamiento de pesas o halterofilia</li>
+                <li>Bicicleta propia adaptada a la competicion</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="ejerciciosCompeticion">
+
+    <div class="ejerciciosItem">
+        <i class="fa-sharp fa-solid fa-dumbbell fa-3x" style="color:#d0e043"></i>
+        <b style="color:#121212; font-family: Teko, sans-serif; font-size: 1.5rem;">Halterofilia</b>
+    </div>
+
+    <div class="ejerciciosItem">
+        <i class="fa-solid fa-person-running fa-3x" style="color:#d0e043"></i>
+        <b style="color:#121212; font-family: Teko, sans-serif; font-size: 1.5rem;">Running</b>
+    </div>
+
+    <div class="ejerciciosItem">
+        <i class="fa-sharp fa-solid fa-bicycle fa-3x" style="color:#d0e043"></i>
+        <b style="color:#121212; font-family: Teko, sans-serif; font-size: 1.5rem;">Bicicleta</b>
+    </div>
+</div>
+
+<div class="inscriptionContainer">
+
+    {% if form %}
+        <b>Inscribete y compite</b>
+        <p>Asegurate de inscribirte en la competicion correcta</p>
+    {% else %}
+        <b>Ya estas inscrito</b>
+    {% endif %}
+
+
+    <div class="competitionEnrollFormArea">
+        {% if mensaje %}
+        <b>{{mensaje}}</b>
+        {% endif %}
+
+        {% if form %}
+        <form method = "post" enctype="multipart/form-data" class="formCompetidor">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btnInscribirseCompetidor">Upload</button>
+        </form>
+        {% endif %}
+
+    </div>
+
+    <div class="peopleInCompetition">
+
+        {% for competitor in competitors %}
+        <div class="peopleInItem">
+            {% if competitor.avatar %}
+            <img src="{{ competitor.avatar.url }}" class="rounded-circle" height="70px" alt="{{ competitor.avatar}}" style="margin-right: 1rem; margin-bottom: 10px;"/>
+            {% endif %}
+            <span >Inscrito</span>
+            <b>{{competitor.name}} {{competitor.lastname}}</b>
+
+            {% if competitor.user_linked == user.username %}
+            <button class="btnSalirCompetencia">
+                <a href="{% url 'outcompetition' competitor.id %}">eliminar</a>
+            </button>
+            {% endif %}
+        </div>
+        <!-- <p>{{competitor.image}}</p> -->
+        {% endfor %}  
+    </div>  
+    </div>
+</div>
+{% endblock content %}

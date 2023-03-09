@@ -1,0 +1,11 @@
+{% extends 'pageTemplate/page.html' %}
+{% load static %}
+{% block content %}
+<div class="OutCompeticionHeader">
+<h1>Estas seguro que quieres salir de la competicion ?</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Salir de la competencia" class="btnOutCompeticion">
+</form>
+</div>
+{% endblock content %}
