@@ -37,3 +37,12 @@ tzdata==2022.7
 
 
 
+## Registro
+En el proceso de registro se requeriran los campos de : 
+```
+Nombre
+Apellido
+Email
+Contrasena  **La contrasena sera encriptada en la base de datos**
+Username
+```
