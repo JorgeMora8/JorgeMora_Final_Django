@@ -36,7 +36,10 @@ tzdata==2022.7
 git clone https://github.com/JorgeMora8/JorgeMora_Final_Django.git
 ```
 5. Abrir nuestro VSCODE y abrir la carpeta que contiene el repositorio
-
+6. Copiar el siguiente comando para instalar las librerias y dependencias: 
+```
+pip install -r requirements.txt
+```
 
 
 
