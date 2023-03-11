@@ -54,7 +54,7 @@ En el proceso de registro se **requerirán** los campos de:
 3. Email
 4. Contraseña.  **"La contraseña será encriptada en la base de datos"**
 5. Username
-*Ejemplo: *
+
 ```
 Nombre: Diana
 Apellido: Mora
@@ -67,7 +67,7 @@ Username: diana123
 Para el proceso de login únicamente serán **necesarios** los campos de: 
 1. Username
 2. Contrasena
-*Ejemplo: *
+
 ```
 Username: diana123
 Contrasena: dcmm12345
@@ -99,7 +99,7 @@ Esta funcionalidad tendrá como requerimientos que el usuario deposite datos com
 1. Nombre 
 2. Texto 
 3. Nombre del post 
-*Ejemplo: *
+
 ```
 Nombre: Diana
 Texto: Super util la informacion
