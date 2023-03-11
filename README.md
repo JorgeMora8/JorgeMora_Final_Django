@@ -39,7 +39,7 @@ tzdata==2022.7
 
 
 ## Registro
-En el proceso de registro se requeriran los campos de : 
+En el proceso de registro se **requeriran** los campos de : 
 1. Nombre
 2. Apellido
 3. Email
@@ -47,7 +47,7 @@ En el proceso de registro se requeriran los campos de :
 5. Username
 
 ## Login: 
-Para el proceso de login unicamente seran necesarios los campos de: 
+Para el proceso de login unicamente seran **necesarios** los campos de: 
 1. Username
 2. Password
 
