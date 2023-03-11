@@ -39,10 +39,27 @@ tzdata==2022.7
 
 ## Registro
 En el proceso de registro se requeriran los campos de : 
-```
-Nombre
-Apellido
-Email
-Contrasena  **La contrasena sera encriptada en la base de datos**
-Username
-```
+1. Nombre
+2. Apellido
+3. Email
+4. Contrasena **La contrasena sera encriptada en la base de datos**
+5. Username
+
+## Login: 
+Para el proceso de login unicamente seran necesarios los campos de: 
+1. Username
+2. Password
+
+## Competencias: 
+El proyecto cuenta con la funcionalidad de competencias, donde el usuario ya registrado o logeado tendra la opcion de registrarse en cualquiera de 
+las competencias actualmente disponibles. Seran nuevamente **para confirmar** sus datos personas y sera registrado en la competencia. 
+#### Datos Requeridos: 
+1. Nombre
+2. Apellido
+3. Edad 
+4. Nombre de competencia
+
+***Es importante recalcar que el usuario no podra registrarse dos o mas veces en la competencia, si el usuario trata de registrarse nuevamente solo 
+tendra una inscripcion registrada a su nombre ***
+
+
