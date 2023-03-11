@@ -100,5 +100,5 @@ El usuario administrador es aquel responsable del mantenimiento y manipulacion d
 
 ## Como Registrarse Siendo Administrador: 
 A continuacion se proveen los datos para ser administrador:
-1. **Username: jorge**
-2. **Contrasena: jorgemora2002**
+1. **Username:** jorge
+2. **Contrasena:** jorgemora2002
