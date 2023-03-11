@@ -40,7 +40,10 @@ git clone https://github.com/JorgeMora8/JorgeMora_Final_Django.git
 ```
 pip install -r requirements.txt
 ```
-
+7. Por ultimo, iniciar el proyecto con el siguiente comando: 
+```
+python manage.py runserver
+```
 
 
 ## Registro
