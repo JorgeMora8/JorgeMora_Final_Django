@@ -10,3 +10,18 @@ El crossfit es una modalidad de deporte que tiene como objetivo promover la mejo
 
 En este proyecto tendremos a disposicion funcionalidades tales como proceso de registro de competencias y contenido a disposicion sobre el mundo del crosffit tales 
 como nutricion, entrenamiento y mas. 
+
+### Librerias en uso: 
+Al ser un proyecto elaborado en lenguaje de programacion de tipado dinamico como Python, a su vez se empleo el framework de Django para la realizacion del proyecto. 
+Tambien se usaron librerias y recursos para llevar a cabo este proyecto de manera corecta y eficiente. 
+
+
+
+## Lenguaje Programacion: Python 
+### Framework Empleado: Django
+#### Librerias
+```
+git status
+git add
+git commit
+```
