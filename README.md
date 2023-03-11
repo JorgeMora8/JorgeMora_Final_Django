@@ -56,7 +56,7 @@ En el proceso de registro se **requerirán** los campos de:
 ## Login: 
 Para el proceso de login únicamente serán **necesarios** los campos de: 
 1. Username
-2. Password
+2. Contrasena
 
 ## Competencias: 
 El proyecto cuenta con la funcionalidad de competencias, donde el usuario ya registrado o logeado tendrá la opción de registrarse en cualquiera de 
