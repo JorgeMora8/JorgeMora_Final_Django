@@ -18,10 +18,13 @@ Tambien se usaron librerias y recursos para llevar a cabo este proyecto de maner
 
 
 ## Lenguaje Programacion: Python 
-### Framework Empleado: Django
-#### Librerias
+#### Librerias & Framework
 ```
-git status
-git add
-git commit
+asgiref==3.6.0
+Django==4.1.7
+Pillow==9.4.0
+sqlparse==0.4.3
+tzdata==2022.7
 ```
+
+
