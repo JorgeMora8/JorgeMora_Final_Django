@@ -31,8 +31,11 @@ tzdata==2022.7
 # Proceso De Instalacion: 
 1. Dirigirse al repositorio de GitHub, hacer click en la opcion "code" y copiar el link del repositorio. 
 2. En nuestra computadora crear una carpeta, luego copiar y abrir la carpeta creada en nuestra terminal(CMD)
-3. copiar el siguiente comando: **git clone https://github.com/JorgeMora8/JorgeMora_Final_Django.git**
-4. Abrir nuestro VSCODE y abrir la carpeta que contiene el repositorio
+3. copiar el siguiente comando:
+4. ```
+5. git clone https://github.com/JorgeMora8/JorgeMora_Final_Django.git
+```
+5. Abrir nuestro VSCODE y abrir la carpeta que contiene el repositorio
 
 
 
