@@ -102,7 +102,7 @@ Esta funcionalidad tendrá como requerimientos que el usuario deposite datos com
 
 ```
 Nombre: Diana
-Texto: Super util la informacion
+Texto: "Super util la informacion"
 Blog: Los beneficios de la avena en el desayuno
 ```
 
