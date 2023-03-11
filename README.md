@@ -17,7 +17,6 @@ También se usaron librerías y recursos para llevar a cabo este proyecto de man
 
 
 
-## Lenguaje Programación: Python 
 #### Librerías & Framework
 ```
 asgiref==3.6.0
