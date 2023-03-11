@@ -102,3 +102,20 @@ El usuario administrador es aquel responsable del mantenimiento y manipulacion d
 A continuacion se proveen los datos para ser administrador:
 1. **Username:** jorge
 2. **Contrasena:** jorgemora2002
+
+
+## Edicion de usuario
+En la parte superior se mostrara el icono de usuario junto al nombre de usuario registrado. 
+A su vez, lo redirige una pagina donde se mostraran todos los datos relacionados a este usuario y tendra la posibilidad de edicion de estos mismos. 
+
+
+
+
+
+
+
+
+
+
+
+
