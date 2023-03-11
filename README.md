@@ -60,6 +60,6 @@ las competencias actualmente disponibles. Seran nuevamente **para confirmar** su
 4. Nombre de competencia
 
 ***Es importante recalcar que el usuario no podra registrarse dos o mas veces en la competencia, si el usuario trata de registrarse nuevamente solo 
-tendra una inscripcion registrada a su nombre ***
+tendra una inscripcion registrada a su nombre***
 
 
