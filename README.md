@@ -43,7 +43,7 @@ En el proceso de registro se **requerirán** los campos de:
 1. Nombre
 2. Apellido
 3. Email
-4. Contraseña **La contraseña será encriptada en la base de datos**
+4. Contraseña.  **"La contraseña será encriptada en la base de datos"**
 5. Username
 
 ## Login: 
