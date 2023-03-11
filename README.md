@@ -31,6 +31,8 @@ tzdata==2022.7
 1. Dirigirse al repositorio de GitHub, hacer click en la opción "code" y copiar el link del repositorio. 
 2. En nuestra computadora crear una carpeta, luego copiar y abrir la carpeta creada en nuestra terminal(CMD)
 3. copiar el siguiente comando:
+
+
 ```
 git clone https://github.com/JorgeMora8/JorgeMora_Final_Django.git
 ```
@@ -85,3 +87,18 @@ Esta funcionalidad tendrá como requerimientos que el usuario deposite datos com
 2. Texto 
 3. Nombre del post 
 
+
+
+# Usuario Administrador
+El usuario administrador es aquel responsable del mantenimiento y manipulacion de los datos dentro de la aplicacion. El usuario administrador tendra la facultad de: 
+
+1. Crear, editar y eliminar competencias
+2. Eliminar usuarios registrados en competencias.
+3. Crear, editar y eliminar blogs
+4. Eliminar reviews
+
+
+## Como Registrarse Siendo Administrador: 
+A continuacion se proveen los datos para ser administrador:
+1. **Username: jorge**
+2. **Contrasena: jorgemora2002**
