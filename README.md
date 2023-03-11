@@ -54,11 +54,24 @@ En el proceso de registro se **requerirán** los campos de:
 3. Email
 4. Contraseña.  **"La contraseña será encriptada en la base de datos"**
 5. Username
+*Ejemplo: *
+```
+Nombre: Diana
+Apellido: Mora
+Email: dianamoramarin@gmail.com
+Contrasena: dcmm12345
+Username: diana123
+```
 
 ## Login: 
 Para el proceso de login únicamente serán **necesarios** los campos de: 
 1. Username
 2. Contrasena
+*Ejemplo: *
+```
+Username: diana123
+Contrasena: dcmm12345
+```
 
 ## Competencias: 
 El proyecto cuenta con la funcionalidad de competencias, donde el usuario ya registrado o logeado tendrá la opción de registrarse en cualquiera de 
@@ -86,8 +99,12 @@ Esta funcionalidad tendrá como requerimientos que el usuario deposite datos com
 1. Nombre 
 2. Texto 
 3. Nombre del post 
-
-
+*Ejemplo: *
+```
+Nombre: Diana
+Texto: Super util la informacion
+Blog: Los beneficios de la avena en el desayuno
+```
 
 # Usuario Administrador
 El usuario administrador es aquel responsable del mantenimiento y manipulacion de los datos dentro de la aplicacion. El usuario administrador tendra la facultad de: 
